@@ -1,0 +1,112 @@
+.s-basket{
+  background: #fff;
+  .link_back{
+    margin-bottom: 40px;
+  }
+}
+.basket{
+  display: flex;
+  &__form{
+    width: 50%;
+    border-right: 3px solid $blue;
+  }
+  &__products{
+    width: 50%;
+    &__item{
+      display: flex;
+      margin: 0 0 30px 30px;
+      img{
+        max-width: 140px;
+        width: 100%;
+        max-height: 120px;
+      }
+    }
+    &__info{
+      margin-left: 20px;
+      p{
+        font-size: 0.625rem;
+        font-family: Roboto-regular;
+        margin: 5px 0 0 10px;
+        b{
+          font-family: Roboto-bold;
+          display: block;
+        }
+      }
+    }
+    &__count{
+      height: 50px;
+      padding: 0 7px;
+      .feedback__btn{
+        height: 22px;
+      }
+      .product__count{
+        font-size: 1.25rem;
+        margin-right: 10px;
+      }
+    }
+  }
+  .tabs{
+    font-size: 0;
+    &__title{
+      text-align: center;
+      font-family: Roboto-regular;
+      width: 50%;
+      line-height: 55px;
+      text-transform: uppercase;
+      background: #eef2f6;
+      display: inline-block;
+      font-size: 1.3125rem;
+      &.is-active{
+        background: $blue;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.order{
+  &__form{
+    margin-top: 80px;
+    font-size: 0.875rem;
+    &__label{
+      display: block;
+      font-family: Roboto-bold;
+      width: 25%;
+      display: inline-block;
+      margin-bottom: 30px;
+    }
+    &__input{
+      width: 55%;
+      height: 43px;
+      border-radius: 15px;
+      padding: 0 10px;
+      border: 1px solid black;
+      &[type="file"]{
+        border: none;
+        padding: 0;
+        border-radius: 0;
+      }
+    }
+    &__method{
+      display: inline-block;
+      width: 60%;
+      vertical-align: text-top;
+      margin-bottom: 20px;
+      input:checked~label{
+        color: $blue;
+      }
+      li{
+        margin-bottom: 3px;
+        font-family: Roboto-regular;
+      }
+    }
+    &__accept{
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 70px;
+      font-family: Roboto-bold;
+    }
+  }
+}

@@ -1,0 +1,101 @@
+.company{
+  display: flex;
+  margin-top: 70px;
+  align-items: center;
+
+  &__info{
+    padding-right: 50px;
+    width: 50%;
+    .news__title{
+      margin-bottom: 35px;
+    }
+    p{
+      font-family: Roboto-regular;
+      font-size: 0.875rem;
+      margin-left: 100px;
+      margin-top: 20px;
+    }
+  }
+  &__img{
+    width: 50%;
+    img{
+      max-width: 100%;
+    }
+  }
+  &__partners{
+    margin-top: 100px;
+    &__header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h2{
+        flex-shrink: 0;
+        margin-right: 40px;
+      }
+    }
+    ul{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    li{
+      display: inline-block;
+      width: calc(20% - 14px);
+      height: 130px;
+      line-height: 130px;
+      text-align: center;
+      filter: grayscale(100%);
+      border: 1px solid #e6e7eb;
+      transition: box-shadow .6s ease,
+                  filter .6s ease;
+      margin-bottom: 14px;
+      &:hover{
+        filter: grayscale(0%);
+        box-shadow: 0px 15px 25px 0px rgba(12, 101, 163, 0.29);
+        border: none;
+      }
+      img{
+        vertical-align: middle;
+        max-width: 90%;
+        max-height: 90%;
+        line-height: 130px;
+      }
+    }
+  }
+}
+
+.swiper{
+  &-container{
+    position: relative;
+  }
+  &-slide{
+    text-align: center;
+    z-index: 1;
+    img{
+      max-width: 100%;
+    }
+  }
+  &-nav{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    i{
+      font-size: 4.0625rem;
+      color: $blue;
+      z-index: 2;
+    }
+  }
+}
+
+
+.certificate__title{
+  margin: 70px 0 30px;
+}
+
+.partners__title{
+  margin: 50px 0;
+}

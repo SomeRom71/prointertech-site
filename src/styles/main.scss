@@ -1,0 +1,64 @@
+@import "../../node_modules/font-awesome/scss/font-awesome";
+@import "../../node_modules/swiper/src/swiper.scss";
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/extends";
+@import "utils/fonts";
+@import "utils/reset";
+@import "utils/fancybox";
+@import "utils/media-queries";
+@import "libs";
+@import "includes/header";
+@import "includes/footer";
+@import "sections/s-main";
+@import "sections/offers";
+@import "sections/catalog";
+@import "sections/card";
+@import "sections/news";
+@import "sections/basket";
+@import "sections/contact";
+@import "sections/company";
+@import "components/products";
+
+html{
+	font-size: 16px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+li > a{
+	color: inherit;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+button, input{
+	outline: none;
+	border: none;
+	background: none;
+	padding: 0;
+}
+
+button{
+	cursor: pointer;
+}
+
+.container{
+	width: 80%;
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
+.link_back{
+		font-family: Roboto-regular;
+		font-size: 0.875rem;
+		color: $blue;
+		margin-left: 75px;
+		display: block;
+		text-align: left;
+}

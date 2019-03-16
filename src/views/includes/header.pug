@@ -1,0 +1,121 @@
+.container
+  header.header
+    a(href="#").logo
+      img(src="../img/logo.png")
+    ul.header__info
+      li.header__info__item
+        | +7 (843) 210-22-60
+        br
+        a(href="javascript:;" data-fancybox data-src="#callback-modal") обратная связь
+        #callback-modal(style="display: none;")
+          form
+            span Мы перезвоним вам
+            input(type="text" name="name" placeholder="Ваше имя")
+            input(type="text" name="phone" placeholder="Ваш телефон")
+            button.feedback__btn Отправить
+      li.header__info__item
+        | 9:00-18:00
+        br
+        | сб-вс-выходной
+    label.search.header__search
+      input(type="text")
+      button
+        img(src="../img/search.png")
+    .header__icons.icons
+      ul.icons__list
+        li
+          a(href="#") 
+            i.fa.fa-user
+        li.has-sub
+          a(href="#") 
+            i.fa.fa-share-alt(aria-hidden="false")
+          ul.soc.header__soc
+            li.soc__item
+              a(href="#")
+                i.fa.fa-facebook-f
+            li.soc__item
+              a(href="#")
+                i.fa.fa-twitter
+            li.soc__item
+              a(href="#")
+                i.fa.fa-whatsapp
+            li.soc__item
+              a(href="#")
+                i.fa.fa-instagram
+        li.basket__icon
+          a(href="#") 
+            span 2
+            i.fa.fa-shopping-basket(aria-hidden="true")
+    nav.nav.header__nav.dropdown
+      span.dropdown-btn 
+        +sprite("nav__icon", "bars-solid")
+      ul.dropdown__content
+        button.dropdown__close-btn.dropdown-btn X
+        li.dropdown__content__item.has-sub
+          a(href="#") О компании
+          ul.dropdown__content__sub-list
+            li.dropdown__content__sub-item
+              a(href="#") О нас
+            li.dropdown__content__sub-item
+              a(href="#") Сертификаты
+            li.dropdown__content__sub-item
+              a(href="#") Партнеры
+        li.dropdown__content__item
+          a(href="#") Новости
+        li.dropdown__content__item
+          a(href="#") Контакты
+.catalog
+  .container.catalog__container
+    .catalog__mobile
+      span
+        +sprite("catalog__bars", "bars-solid")
+        | Каталог
+      +sprite("catalog__carret", "caret-down-solid")
+    ul.catalog__list
+      li.catalog__list__item
+        a(href="#") 
+          i.fa.fa-star-o(aria-hidden="true")
+          | Акции
+      li.catalog__list__item
+        a(href="#") 
+          i.fa.fa-star-o(aria-hidden="true")
+          | Компьютеры
+      li.catalog__list__item
+        a(href="#") 
+          i.fa.fa-star-o(aria-hidden="true")
+          | Мониторы
+      li.catalog__list__item
+        a(href="#") 
+          i.fa.fa-star-o(aria-hidden="true")
+          | периферия
+      li.catalog__list__item
+        a(href="#") 
+          i.fa.fa-star-o(aria-hidden="true")
+          | Сетевое
+      li.catalog__list__item
+        a(href="#") 
+          i.fa.fa-star-o(aria-hidden="true")
+          | Проектное
+      li.catalog__list__item
+        a(href="#") 
+          i.fa.fa-star-o(aria-hidden="true")
+          | XEROX
+      li.catalog__list__item
+        a(href="#") 
+          i.fa.fa-star-o(aria-hidden="true")
+          | Оргтехника
+      li.catalog__list__item
+        a(href="#") 
+          i.fa.fa-star-o(aria-hidden="true")
+          | Аксессуары
+      li.catalog__list__item
+        a(href="#") 
+          i.fa.fa-star-o(aria-hidden="true")
+          | материалы
+      li.catalog__list__item
+        a(href="#") 
+          i.fa.fa-star-o(aria-hidden="true")
+          | Бумага 
+        
+      
+        

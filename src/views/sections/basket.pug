@@ -1,0 +1,83 @@
+section.s-basket
+  .container
+    h2.s-title.s-card__title Ваша корзина
+    a(href="#").link_back Вернуться в каталог
+    .basket
+      .basket__form
+        ul#product-accordion-tabs.tabs
+          li.tabs__title.is-active
+            a(href="#product-tab-1")#product-tab-1-label Физическое лицо
+          li.tabs__title
+            a(href="#product-tab-2")#product-tab-2-label Юридическое лицо
+        ul.product-accordion-tabs-content.tabs-content
+          li#product-tab-1.product-accordion-tabs-item.tabs-panel.is-active
+            form.order__form
+              label(for="name").order__form__label Введите ваше имя
+              input#name(type="text").order__form__input
+              label(for="phone").order__form__label Телефон*
+              input#phone(type="text").order__form__input
+              label(for="email").order__form__label E-mail
+              input#email(type="text").order__form__input
+              label(for="adress").order__form__label Адрес доставки*
+              input#adress(type="text").order__form__input
+              label(for="comment").order__form__label Комментарий
+              input#comment(type="text").order__form__input
+              label.order__form__label Способ оплаты
+              ul.order__form__method
+                li
+                  input#choise1(type="radio" name="method" hidden value="Безналичными")
+                  label(for="choise1") Безналичными
+                li
+                  input#choise2(type="radio" name="method" hidden value="Наличными при получении")
+                  label(for="choise2") Наличными при получении
+              label(for="promo").order__form__label Промокод
+              input#promo(type="text").order__form__input
+              span.order__form__accept Всего к оплате
+                b.product__count 26850Р
+                button(type="submit").feedback__btn Подтвердить заказ
+          li#product-tab-2.product-accordion-tabs-item.tabs-panel
+            form.order__form
+              label(for="name").order__form__label Название компании
+              input#name(type="text").order__form__input
+              label(for="inn").order__form__label ИНН*
+              input#inn(type="text").order__form__input
+              label(for="phone").order__form__label Телефон
+              input#phone(type="text").order__form__input
+              label(for="company").order__form__label Карточка компании
+              input#company(type="file").order__form__input
+              label(for="comment").order__form__label Комментарий
+              input#comment(type="text").order__form__input
+              label(for="promo").order__form__label Промокод
+              input#promo(type="text").order__form__input
+              span.order__form__accept Всего к оплате
+                b.product__count 26850Р
+                button(type="submit").feedback__btn Подтвердить заказ
+      ul.basket__products
+        li.basket__products__item
+          img(src="img/product.jpg")
+          .basket__products__info
+            .basket__products__count.card__info__count
+              span.product__count 8950Р
+              button.feedback__btn Удалить
+            p
+              b Краткое описание
+              | Системный блок Lenovo Legion T530-28ICB (90JL007ARS) по доступной цене.
+        li.basket__products__item
+          img(src="img/product.jpg")
+          .basket__products__info
+            .basket__products__count.card__info__count
+              span.product__count 8950Р
+              button.feedback__btn Удалить
+            p
+              b Краткое описание
+              | Системный блок Lenovo Legion T530-28ICB (90JL007ARS) по доступной цене.
+        li.basket__products__item
+          img(src="img/product.jpg")
+          .basket__products__info
+            .basket__products__count.card__info__count
+              span.product__count 8950Р
+              button.feedback__btn Удалить
+            p
+              b Краткое описание
+              | Системный блок Lenovo Legion T530-28ICB (90JL007ARS) по доступной цене.
+      

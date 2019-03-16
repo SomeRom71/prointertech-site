@@ -1,0 +1,64 @@
+.product{
+  &__list{
+    font-size: 0;
+    text-align: left;
+    width: 90%;
+  }
+  &__item{
+    width: calc(33% - 5px);
+    background: #fff;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    padding: 30px 40px;
+    margin: 0 2.5px 5px;
+    img{
+      max-width: 100%;
+    }
+  }
+  &__title{
+    font-family: Roboto-regular;
+    font-size: 0.875rem;
+    margin-top: 25px;
+    color: #000;
+  }
+  &__stars{
+    margin-top: 10px;
+    li{
+      color: #f1be0e;
+      display: inline-block;
+      font-size: 1.375rem;
+      margin: 0 2.5px;
+    }
+  }
+  &__count{
+    &-block{
+      display: flex;
+      width: 100%;
+      margin-top: 20px;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+    font-family: Roboto-black;
+    font-size: 1.875rem;
+    position: relative;
+    .crossed{
+      position: absolute;
+      top: -15px;
+      left: 0;
+      font-family: Roboto-regular;
+      font-size: 0.875rem;
+      text-decoration: line-through;
+    }
+  }
+  &__btn{
+    color: #fff;
+    width: 65px;
+    height: 45px;
+    background: $blue;
+    border-radius: 10px;
+    i{
+      font-size: 1.625rem;
+    }
+  }
+}

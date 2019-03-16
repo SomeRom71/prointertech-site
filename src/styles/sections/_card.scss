@@ -1,0 +1,217 @@
+.s-card{
+  background: #fff;
+  &__title{
+    &:before{
+      content: none;
+    }
+  }
+}
+
+.card{
+  text-align: center;
+  .link_back{
+    margin-bottom: 30px;
+  }
+  &__desc{
+    display: inline-block;
+    margin: 0 auto;
+    width: 65%;
+    margin-top: 20px;
+    border-top: 3px solid $blue;
+  }
+  &__table{
+    font-family: Roboto-regular;
+    font-size: 0.875rem;
+    border-collapse: separate;
+    border-spacing: 55px 20px;
+    text-align: left;
+    th{
+      font-family: Roboto-bold;
+      white-space: nowrap;
+    }
+  }
+  &__item{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    text-align: left;
+  }
+  &__img{
+    display: flex;
+    align-items: center;
+    width: 55%;
+    &__list{
+      li{
+        margin-bottom: 30px;
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+      img{
+        width: 100%;
+        max-width: 105px;
+        min-width: 80px;
+      }
+    }
+    &_main{
+      max-width: 455px;
+      width: 100%;
+      margin-left: 60px;
+    }
+  }
+  &__info{
+    margin-top: 25px;
+    width: 32%;
+    &__count{
+      background: #f0f1f5;
+      display: flex;
+      justify-content: space-between;
+      height: 95px;
+      padding: 0 30px;
+      align-items: center;
+    }
+    &__list{
+      font-size: 0.875rem;
+      margin-left: 30px;
+      &:after{
+        content: "";
+        display: inline-block;
+        width: 45%;
+        height: 3px;
+        background: $blue;
+      }
+      li {
+        font-family: Roboto-bold;
+        margin-top: 25px;
+      }
+      p {
+        margin-top: 2px;
+        font-family: Roboto-regular;
+      }
+      .product__stars{
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 0;
+      }
+    }
+    &__link{
+      margin: 10px 0 0 30px ;
+      li{
+        color: $blue;
+        font-family: Roboto-regular;
+        font-size: 0.875rem;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.card__tabs{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  &__title{
+    font-size: 1rem;
+    display: inline-block;
+    font-family: Roboto-black;
+    text-transform: uppercase;
+    &.is-active{
+      color: $blue;
+      position: relative;
+      &:after{
+        content: "";
+        position: absolute;
+        top: 20px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-left: 34px solid transparent;
+        border-right: 34px solid transparent;
+        border-top: 25px solid #eef2f6;
+      }
+    }
+  }
+  &-content{
+    margin-top: 60px;
+  }
+  &-panel{
+    text-align: left;
+  }
+}
+
+.product-accordion-tabs-item{
+  display: none;
+  &.is-active{
+    display: block;
+  }
+}
+
+.feedback{
+  &__list{
+    text-align: left;
+  }
+  &__item{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+  &__info{
+    margin-left: 30px;
+  }
+  &__name{
+    font-family: Roboto-bold;
+    font-size: 0.875rem;
+    b {
+      margin-left: 25px;
+    }
+  }
+  &__mark{
+    margin: 20px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    li {
+      display: inline-block;
+      font-family: Roboto-regular;
+      font-size: 0.875rem;
+    }
+    ul.product__stars{
+      display: inline-block;
+      li{
+        font-size: 1rem;
+      }
+    }
+  }
+  &__text{
+    font-family: Roboto-regular;
+    font-size: 0.875rem;
+    margin-bottom: 25px;
+    b{
+      display: block;
+      font-family: Roboto-bold;
+      margin-bottom: 20px;
+    }
+  }
+  &__btn{
+    color: #fff;
+    background: $blue;
+    border-radius: 15px;
+    font-family: Roboto-regular;
+    height: 35px;
+    padding: 0 20px;
+  }
+}
+
+.certificate{
+  &__list{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  &__item{
+    margin: 0 10px;
+    img{
+      max-width: 100%;
+    }
+  }
+}
